@@ -1,0 +1,28 @@
+C:\terraform\terraform version
+{
+  "appId": "b89965b1-08ad-489e-8998-2ba2fa42e38a",
+  "displayName": "azure-cli-2022-10-29-05-17-46",
+  "password": "4jQ8Q~_O5t~NGRC.izsrTuUErAqtEFl3fnTDcceA",
+  "tenant": "3c627e7b-aaa5-4c01-b6a1-095f1191ed72"
+}
+C:\terraform\terraform init
+C:\terraform\terraform validate
+C:\terraform\terraform plan
+C:\terraform\terraform apply
+C:\terraform\terraform destroy
+C:\terraform\terraform state list
+az vm image list --all --output table
+az vm list-skus --output table --location westus
+C:\terraform\terraform state show azurerm_public_ip.example
+C:\terraform\terraform state list
+C:\terraform\terraform show -list
+
+provider = azurerm.GTS-Storage
+C:\terraform\terraform plan -var="rgname=cmd-rg" -var="rglocation=westus" -out varplan
+result = [for s in var.rglist : upper(s)] #creating collection
+
+terraform taint 
+terraform state list
+terraform taint azurerm_resource_group.example
+terraform state show azurerm_resource_group.example #would show as tainted
+terraform untaint #if you want to remove taint
