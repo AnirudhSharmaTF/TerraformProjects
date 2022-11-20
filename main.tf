@@ -22,6 +22,7 @@ provider "azurerm" {
   provider = azurerm.GTS-Storage
   name =var.rglist[3]
   location = var.rglist[1]
+  tags = { environment = "prod" }
   
 }*/
 resource "azurerm_resource_group" "example1" {
@@ -29,4 +30,5 @@ resource "azurerm_resource_group" "example1" {
   for_each = var.rgmap
   name = each.key
   location = each.value
+  tags = { environment = "dev" }
 }
